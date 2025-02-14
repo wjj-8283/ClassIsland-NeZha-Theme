@@ -407,7 +407,7 @@
                                         </Grid>
                                     </Grid>   
                                 </Border>
-                                <!-- 值日生-->
+                                <!-- 值日生，最小宽度：80-->
                                 <Border CornerRadius="10" Padding="15 0"
                                         Height="60"
                                         BorderBrush="{DynamicResource PrimaryHueMidBrush}" BorderThickness="0.75"
@@ -429,10 +429,10 @@
                                             </Grid.Style>
                                             <Canvas>
                                                 <!-- 这里可以替换成你喜欢的图片 -->
-                                                <Image Source="com_6.png"
-                                                       Height="60" Width="60" Stretch="UniformToFill"
-                                                       Canvas.Top="0" Canvas.Right="15"
-                                                       Opacity="0.6">
+                                                <Image Source="com_6_1.png"
+                                                       Height="60" Width="107" Stretch="UniformToFill"
+                                                       Canvas.Top="0" Canvas.Right="-10"
+                                                       Opacity="0.75">
                                                 </Image> 
                                             </Canvas>
                                         </Grid> 
@@ -463,6 +463,37 @@
                                     <Border.Effect>
                                         <DropShadowEffect BlurRadius="8" ShadowDepth="0" Opacity="0.8"  Color="{Binding BorderBrush, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Border}, Converter={StaticResource SolidColorBrushToColorConverter}}"/>
                                     </Border.Effect>
+                                </Border>
+                                <!-- 分割线-->
+                                <Border CornerRadius="10" Padding="15 0"
+                                        Height="60"
+                                        BorderBrush="{DynamicResource PrimaryHueMidBrush}" BorderThickness="0.75"
+                                        >
+                                    <Grid>
+                                        <Grid>
+                                            <Grid.Style>
+                                                <Style TargetType="{x:Type Grid}">
+                                                    <Style.Triggers>
+                                                        <MultiDataTrigger>
+                                                            <MultiDataTrigger.Conditions>
+                                                                <Condition Binding="{Binding Id}" Value="ab0f26d5-9df6-4575-b844-73b04d0907c1"/>
+                                                            </MultiDataTrigger.Conditions>
+                                                            <Setter Property="Visibility" Value="Visible"/>
+                                                        </MultiDataTrigger>
+                                                    </Style.Triggers>
+                                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                                </Style>    
+                                            </Grid.Style>
+                                            <Canvas>
+                                                <!-- 这里可以替换成你喜欢的图片 -->
+                                                <Image Source="com_7.png"
+                                                       Height="60" Width="40" Stretch="UniformToFill"
+                                                       Canvas.Top="0" Canvas.Right="-5"
+                                                       Opacity="1">
+                                                </Image> 
+                                            </Canvas>
+                                        </Grid> 
+                                    </Grid>
                                 </Border>
                             </Grid>
                         </ControlTemplate> 
