@@ -98,7 +98,7 @@
                                         </Grid>
                                     </Grid>   
                                 </Border>
-                                <!-- 更好的倒计时日-->
+                                <!-- 更好的倒计时日/倒计时日-->
                                 <Border CornerRadius="10" Padding="15 0"
                                         Height="60"
                                         BorderBrush="{DynamicResource PrimaryHueMidBrush}" BorderThickness="0.75"
@@ -141,7 +141,50 @@
                                         </Grid>
                                     </Grid>   
                                 </Border>
-                                <!-- 名句一言-->
+
+                                <Border CornerRadius="10" Padding="15 0"
+                                        Height="60"
+                                        BorderBrush="{DynamicResource PrimaryHueMidBrush}" BorderThickness="0.75"
+                                        >
+                                    <Grid>
+                                        <Grid>
+                                            <Grid.Style>
+                                                <Style TargetType="{x:Type Grid}">
+                                                    <Style.Triggers>
+                                                        <MultiDataTrigger>
+                                                            <MultiDataTrigger.Conditions>
+                                                                <Condition Binding="{Binding Id}" Value="7c645d35-8151-48ba-b4ac-15017460d994"/>
+                                                            </MultiDataTrigger.Conditions>
+                                                            <Setter Property="Visibility" Value="Visible"/>
+                                                        </MultiDataTrigger>
+                                                    </Style.Triggers>
+                                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                                </Style>    
+                                            </Grid.Style>
+                                            <Canvas>
+                                                <!-- 这里可以替换成你喜欢的图片 -->
+                                                <Image Source="com_3.png"
+                                                       Height="60" Width="60" Stretch="UniformToFill"
+                                                       Canvas.Top="0" Canvas.Right="0"
+                                                       Opacity="0.7">
+                                                </Image> 
+                                            </Canvas>
+                                        </Grid> 
+
+                                        <TextBlock Text="{Binding AssociatedComponentInfo.Name}" HorizontalAlignment="Center"
+                                                FontSize="12"
+                                                Margin="0 4 0 0"
+                                                Opacity="0.8"/>
+                                        <Grid>
+                                            <Grid>
+                                                <Grid Height="40" VerticalAlignment="Bottom">
+                                                    <ContentPresenter Content="{Binding Content, RelativeSource={RelativeSource AncestorType= ci:ComponentPresenter}}" />
+                                                </Grid>
+                                            </Grid>
+                                        </Grid>
+                                    </Grid>   
+                                </Border>
+                                <!-- 名句一言/一言-->
                                 <Border CornerRadius="10" Padding="15 0"
                                         Height="60"
                                         BorderBrush="{DynamicResource PrimaryHueMidBrush}" BorderThickness="0.75"
@@ -184,7 +227,50 @@
                                         </Grid>
                                     </Grid>   
                                 </Border>
-                                <!-- 流畅时钟-->
+
+                                <Border CornerRadius="10" Padding="15 0"
+                                        Height="60"
+                                        BorderBrush="{DynamicResource PrimaryHueMidBrush}" BorderThickness="0.75"
+                                        >
+                                    <Grid>
+                                        <Grid>
+                                            <Grid.Style>
+                                                <Style TargetType="{x:Type Grid}">
+                                                    <Style.Triggers>
+                                                        <MultiDataTrigger>
+                                                            <MultiDataTrigger.Conditions>
+                                                                <Condition Binding="{Binding Id}" Value="3dfe17ba-92d3-9e14-f5ca-cc9ee40c5f58"/>
+                                                            </MultiDataTrigger.Conditions>
+                                                            <Setter Property="Visibility" Value="Visible"/>
+                                                        </MultiDataTrigger>
+                                                    </Style.Triggers>
+                                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                                </Style>    
+                                            </Grid.Style>
+                                            <Canvas>
+                                                <!-- 这里可以替换成你喜欢的图片 -->
+                                                <Image Source="com_2.png"
+                                                       Height="70" Width="95" Stretch="UniformToFill"
+                                                       Canvas.Top="-10" Canvas.Right="0"
+                                                       Opacity="0.65">
+                                                </Image> 
+                                            </Canvas>
+                                        </Grid> 
+
+                                        <TextBlock Text="{Binding AssociatedComponentInfo.Name}" HorizontalAlignment="Center"
+                                                FontSize="12"
+                                                Margin="0 4 0 0"
+                                                Opacity="0.8"/>
+                                        <Grid>
+                                            <Grid>
+                                                <Grid Height="40" VerticalAlignment="Bottom">
+                                                    <ContentPresenter Content="{Binding Content, RelativeSource={RelativeSource AncestorType= ci:ComponentPresenter}}" />
+                                                </Grid>
+                                            </Grid>
+                                        </Grid>
+                                    </Grid>   
+                                </Border>
+                                <!-- 流畅时钟/时钟-->
                                 <Border CornerRadius="10" Padding="15 0"
                                         Height="60"
                                         BorderBrush="{DynamicResource PrimaryHueMidBrush}" BorderThickness="0.75"
@@ -197,6 +283,51 @@
                                                         <MultiDataTrigger>
                                                             <MultiDataTrigger.Conditions>
                                                                 <Condition Binding="{Binding Id}" Value="0ea67b3b-e4cb-56c1-afdc-f3ea7f38924d"/>
+                                                            </MultiDataTrigger.Conditions>
+                                                            <Setter Property="Visibility" Value="Visible"/>
+                                                        </MultiDataTrigger>
+                                                    </Style.Triggers>
+                                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                                </Style>    
+                                            </Grid.Style>
+                                            <Canvas>
+                                                <!-- 这里可以替换成你喜欢的图片 -->
+                                                <Image Source="com_4.png"
+                                                       Height="60" Width="60" Stretch="UniformToFill"
+                                                       Canvas.Top="0" Canvas.Right="-12"
+                                                       Opacity="0.65">
+                                                </Image> 
+                                            </Canvas>
+                                        </Grid> 
+
+                                        <TextBlock Text="{Binding AssociatedComponentInfo.Name}" HorizontalAlignment="Center"
+                                                FontSize="12"
+                                                Margin="0 4 0 0"
+                                                Opacity="0.8"/>
+                                        <Grid>
+                                            <Grid>
+                                                <Grid>
+                                                    <Grid Height="40" VerticalAlignment="Bottom">
+                                                        <ContentPresenter Content="{Binding Content, RelativeSource={RelativeSource AncestorType= ci:ComponentPresenter}}" />
+                                                    </Grid>
+                                                </Grid>
+                                            </Grid>
+                                        </Grid>
+                                    </Grid>   
+                                </Border>
+
+                                <Border CornerRadius="10" Padding="15 0"
+                                        Height="60"
+                                        BorderBrush="{DynamicResource PrimaryHueMidBrush}" BorderThickness="0.75"
+                                        >
+                                    <Grid>
+                                        <Grid>
+                                            <Grid.Style>
+                                                <Style TargetType="{x:Type Grid}">
+                                                    <Style.Triggers>
+                                                        <MultiDataTrigger>
+                                                            <MultiDataTrigger.Conditions>
+                                                                <Condition Binding="{Binding Id}" Value="9e1af71d-8f77-4b21-a342-448787104dd9"/>
                                                             </MultiDataTrigger.Conditions>
                                                             <Setter Property="Visibility" Value="Visible"/>
                                                         </MultiDataTrigger>
