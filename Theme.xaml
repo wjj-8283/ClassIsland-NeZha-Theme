@@ -560,6 +560,7 @@
                                     Style="{StaticResource BackgroundBorderStyle}"
                                     Width="{Binding ActualWidth, ElementName=BackgroundBorder, Mode=OneWay}"
                                     Opacity="0"
+                                    CornerRadius="20" Padding="20 0"
                                     SnapsToDevicePixels="True"
                                     Height="{DynamicResource IslandContainerHeight}">
                             </Border>
@@ -601,14 +602,16 @@
                                     ClipToBounds="True"
                                     Opacity="0">
                                     <Border Background="{DynamicResource MaterialDesignBackground}"
+                                            CornerRadius="20" Padding="20 0"
                                             Opacity="{Binding ViewModel.Settings.Opacity, RelativeSource={RelativeSource AncestorType=classIsland:MainWindow}}"/>
-                                    <Border ClipToBounds="True">
+                                    <Border ClipToBounds="True"
+                                                    CornerRadius="20" Padding="20 0">
                                         <ProgressBar VerticalAlignment="Bottom"
                                                     Maximum="1"
                                                     Value="{Binding NotificationProgressBarValue, RelativeSource={RelativeSource AncestorType=classIsland:MainWindow}}"
                                                     x:Name="OverlayTimeProgressBar"
                                                     materialDesign:TransitionAssist.DisableTransitions="True"
-                                                    Height="3"
+                                                    Height="1"
                                                     Foreground="{DynamicResource PrimaryHueMidBrush}"
                                                     Background="Transparent"
                                                     BorderBrush="Transparent">
