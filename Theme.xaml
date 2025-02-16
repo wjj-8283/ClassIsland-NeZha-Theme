@@ -560,7 +560,7 @@
                                     Style="{StaticResource BackgroundBorderStyle}"
                                     Width="{Binding ActualWidth, ElementName=BackgroundBorder, Mode=OneWay}"
                                     Opacity="0"
-                                    CornerRadius="20" Padding="20 0"
+                                    CornerRadius="20" Padding="15 0"
                                     SnapsToDevicePixels="True"
                                     Height="{DynamicResource IslandContainerHeight}">
                             </Border>
@@ -572,6 +572,7 @@
                                 ClipToBounds="True">
                                 <materialDesign:ColorZone x:Name="BackgroundBorderOverlayMask" Mode="PrimaryMid"
                                                         VerticalAlignment="Stretch"
+                                                        CornerRadius="20" Padding="20 0"
                                                         RenderTransformOrigin="0.5,0.5">
                                     <materialDesign:ColorZone.RenderTransform>
                                         <TransformGroup>
@@ -629,6 +630,7 @@
                                 <materialDesign:ColorZone x:Name="OverlayMask" Mode="PrimaryMid" HorizontalAlignment="Stretch"
                                                         VerticalAlignment="Stretch"
                                                         RenderTransformOrigin="0.5,0.5"
+                                                        CornerRadius="20" Padding="20 0"
                                                         SnapsToDevicePixels="True">
                                     <materialDesign:ColorZone.RenderTransform>
                                         <TransformGroup>
